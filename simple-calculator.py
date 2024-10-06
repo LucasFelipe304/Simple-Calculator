@@ -1,53 +1,53 @@
-def opcoes():
+def options():
     print("""
-    1 - Soma
-    2 - Subtração
-    3 - Multiplicação
-    4 - Divisão
-    5 - Sair do programa
+    1 - Addition
+    2 - Subtraction
+    3 - Multiplication
+    4 - Division
+    5 - Exit the program
 """)
-opcoes()
+options()
 
 while True:
-    escolher_opcao = str(input('Escolha sua opção: ')).strip()
+    choose_option = str(input('Choose your option: ')).strip()
 
-    if escolher_opcao == '1':
-        n1 = float(input('Digite um número (N1): '))
-        n2 = float(input('Digite um número (N2): '))
-        def soma(x, y):
+    if choose_option == '1':
+        n1 = float(input('Enter a number (N1): '))
+        n2 = float(input('Enter a number (N2): '))
+        def add(x, y):
             return x + y
-        resultado_soma = soma(n1, n2)
-        print(resultado_soma)
+        add_result = add(n1, n2)
+        print(add_result)
 
-    elif escolher_opcao == '2':
-        n1 = float(input('Digite um número (N1): '))
-        n2 = float(input('Digite um número (N2): '))
-        def sub(x, y):
+    elif choose_option == '2':
+        n1 = float(input('Enter a number (N1): '))
+        n2 = float(input('Enter a number (N2): '))
+        def subtract(x, y):
             return x - y
-        resultado_sub = sub(n1, n2)
-        print(resultado_sub)
+        subtract_result = subtract(n1, n2)
+        print(subtract_result)
 
-    elif escolher_opcao == '3':
-        n1 = float(input('Digite um número (N1): '))
-        n2 = float(input('Digite um número (N2): '))
-        def multiplicacao(x, y):
+    elif choose_option == '3':
+        n1 = float(input('Enter a number (N1): '))
+        n2 = float(input('Enter a number (N2): '))
+        def multiply(x, y):
             return x * y
-        resultado_multiplicacao = multiplicacao(n1, n2)
-        print(resultado_multiplicacao)
-    
-    elif escolher_opcao == '4':
-        n1 = float(input('Digite um número (N1): '))
-        n2 = float(input('Digite um número (N2): '))
-        def divisao(x, y):
-            if y == 0:
-                return "Erro: Divisão por zero não é permitida."
-            return x / y
-        resultado_divisao = divisao(n1, n2)
-        print(resultado_divisao)
+        multiply_result = multiply(n1, n2)
+        print(multiply_result)
 
-    elif escolher_opcao == '5':
-        print("Saindo do programa.")
+    elif choose_option == '4':
+        n1 = float(input('Enter a number (N1): '))
+        n2 = float(input('Enter a number (N2): '))
+        def divide(x, y):
+            if y == 0:
+                return "Error: Division by zero is not allowed."
+            return x / y
+        divide_result = divide(n1, n2)
+        print(divide_result)
+
+    elif choose_option == '5':
+        print("Exiting the program.")
         break
 
     else:
-        print("Opção inválida. Por favor, escolha uma opção entre 1 e 5.")
+        print("Invalid option. Please choose an option between 1 and 5.")
